@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfTrashTest.MyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTrashTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="421" Width="525" Loaded="Window_Loaded" >
+    <Window.Resources>
+    </Window.Resources>
+    <Grid Margin="0,0,0,0" >
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="Brown" Grid.Column="2" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Blue" Grid.Column="0" Grid.Row="1" Height="8"></GridSplitter>
+            <WrapPanel Background="Bisque" Grid.Row="0" Grid.Column="0">
+                <Button>2222222222222222222222222222277777777777777777777777777</Button>
+                <Button>33333333333333333333333333333333399999999999999999999999999</Button>
+            </WrapPanel>
+            <WrapPanel Background="Chartreuse" Grid.Row="2" Grid.Column="0">
+                <Button>444444444444444444444444444444444444444444</Button>
+                <Button>55555555555555555555555555555555555555555555555555555</Button>
+            </WrapPanel>
+        </Grid>
+        
+        <GridSplitter  Background="White" VerticalAlignment="Stretch"   Grid.Column="1" Grid.RowSpan="3" HorizontalAlignment="Center" Width="4"/>
+        <WrapPanel Grid.Row="0" Grid.Column="0" Background="Aquamarine">
+            <Button>00000000000000000000000000</Button>
+            <Button>1111111111111111111111111111111111111111111</Button>
+            <Button>00000000000000000000000000</Button>
+            <Button>1111111111111111111111111111111111111111111</Button>
+        </WrapPanel>
+
+    </Grid>
+</Window>
